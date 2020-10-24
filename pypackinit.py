@@ -271,7 +271,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
-MANIFEST_FILE = """include LICENSE.txt
+MANIFEST_FILE = """include LICENSE
 include CHANGELOG.md
 """
 
@@ -354,12 +354,12 @@ def main():
         cl.write(CHANGELOG_FILE.format(projectname=args.project_name))
     with open("README.md", "w", encoding="utf-8") as rm:
         rm.write(README_FILE.format(projectname=args.project_name, author=args.author))
-    with open("LICENSE.txt", "w", encoding="utf-8") as lic:
+    with open("LICENSE", "w", encoding="utf-8") as lic:
         lic.write(
             LICENSE_FILE.format(date=datetime.datetime.today().year, author=args.author)
         )
         warnings.warn(
-            "Default LICENSE.txt file contains the MIT License text. Change it, if needed, to suit your needs!",
+            "Default LICENSE file contains the MIT License text. Change it, if needed, to suit your needs!",
             Warning,
         )
     with open("MANIFEST.in", "w", encoding="utf-8") as m:
