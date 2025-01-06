@@ -1,5 +1,9 @@
 # Python Package Initializer
 
+> [!IMPORTANT]
+> This package is not useful anymore, as many solid projects have sprouted that make initialising
+> a new package extremely easy. My current favourite is [uv](https://docs.astral.sh/uv/).
+
 This utility is aimed at creating the boilerplate necessary when starting a new python package.
 I've found out that packaging even my own script helps tremendously in the long run, and also
 improves the general quality of my projects.
